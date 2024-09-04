@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            height: 70px;
+            background-color: rgb(15, 4, 60);
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(100, 17, 215);
+            font-size: 1.1rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+
+        .leftSection {
+            width: 45%;
+            font-size: 3rem;
+            margin: 10px;
+        }
+
+        .rightSection {
+            width: 30%;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        .purpal {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 88vw;
+            margin: auto;
+        }
+
+        .main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 2px;
+            margin: 60px 0;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .secondSection div {
+            margin: 10px 0;
+        }
+
+        .trend-image img {
+            width: 100%;
+        }
+
+        footer {
+            background-color:rgb(2, 2, 35);;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 4px solid #031a31;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: whitesmoke;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dashboard</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Authro</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purpal">Parshuram</span>
+                <div>and I am a Passionate Cybersecurity Researcher</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="Image/Cybersecurity.jpeg" alt="Cybersecurity Image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"></span>
+            <h1>Cyber Trends</h1>
+            <div class="trend-section">
+                <div class="trend-image">
+                    <img src="Image/IMG3.jpg" alt="Hacker News Trends Image">
+                </div>
+                <div class="trend-description">
+                    <h2>Cyber Security Updated</h2>
+                    <p>Stay updated with the latest trends in the world of cybersecurity, tech innovation, and hacking. Explore the newest tools, frameworks, and discussions that are making waves in the industry....</p>
+                </div>
+                <div class="reference-link">
+                    <a href="https://thehackernews.com/" target="_blank">Read more on Hacker News</a>
+                </div>
+            </div>
+
+            <div class="trend-section">
+                <div class="trend-image">
+                    <img src="Image/IMG4.jpg" alt="Hacker News Trends Image">
+                </div>
+                <div class="trend-description">
+                    <h2>Web Application Pentesting</h2>
+                    <p>The OWASP Top 10 is a widely recognized list highlighting the most critical web application security risks. It includes Broken Access Control, where users can exploit flaws to gain unauthorized access or actions; Cryptographic Failures, which occur due to weak or mismanaged encryption; Injection...</p>
+                </div>
+                <div class="reference-link">
+                    <a href="https://owasp.org/Top10/" target="_blank">Read more on OWASP</a>
+                </div>
+            </div>
+
+            <div class="trend-section">
+                <div class="trend-image">
+                    <img src="Image/IMG5.jpg" alt="Network Security Image">
+                </div>
+                <div class="trend-description">
+                    <h2>Network Security</h2>
+                    <p>Network security involves protecting computer networks from unauthorized access, misuse, or harm. It includes measures like firewalls, encryption, intrusion detection systems, and access controls to safeguard data and ensure the confidentiality, integrity, and availability of network resources...</p>
+                </div>
+                <div class="reference-link">
+                    <a href="https://www.fortinet.com/resources/cyberglossary/what-is-network-security" target="_blank">Read more on Fortinet</a>
+                </div>
+            </div>
+
+            <div class="trend-section">
+                <div class="trend-image">
+                    <img src="Image/IMG6.jpg" alt="Blockchain Technology Image">
+                </div>
+                <div class="trend-description">
+                    <h2>Blockchain Technology</h2>
+                    <p>Blockchain technology is a decentralized digital ledger used to record transactions across many computers so that the record cannot be altered retroactively. This technology underpins cryptocurrencies and is also used in various other applications...</p>
+                </div>
+                <div class="reference-link">
+                    <a href="https://www.blockchain-council.org/blockchain/what-is-blockchain-technology-and-how-does-it-work/" target="_blank">Read more on Blockchain Council</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Application Pentester, Programmer, Ethical Hacker'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Parshuram Yadav. All rights reserved.</p>
+        
+     
+
+    </footer>
+
+</body>
+</html>
