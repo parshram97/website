@@ -1,0 +1,42 @@
+.trend-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:0,0,33;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .trend-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #0d0325;
+    border: 1px solid #16064b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .trend-image {
+    box-shadow: #101010;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .trend-image:hover {
+    font-size: 2rem; /* Existing effect */
+    transform: scale(1.1); /* Slightly increase the size */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    filter: brightness(1.2); /* Brighten the image */
+    transition: all 0.3s ease; /* Smooth transition for the effects */
+    border: 2px solid #101010; /* Add a green border */
+}
+
+  
+  .trend-image img {
+    width: 100%;
+  }
